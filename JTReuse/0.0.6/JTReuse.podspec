@@ -1,4 +1,4 @@
-version = '0.0.5'
+version = '0.0.6'
 source = { :git => 'https://github.com/jonz-tech/JTReuse.git' }
 
 Pod::Spec.new do |s|
