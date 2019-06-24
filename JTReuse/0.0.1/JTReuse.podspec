@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.author           = { "jonz-tech" => "jonz-tech@gmail.com" }
   s.platform     = :ios, '8.0'
   s.requires_arc = true
-  s.default_subspec = 'All'
   s.subspec 'JTReuse' do |spec|
     spec.requires_arc            = true
     spec.source_files = 'JTReuse/JTReuseSource/**/*.{h,m,c,cpp,mm}'
