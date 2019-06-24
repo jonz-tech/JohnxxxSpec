@@ -1,12 +1,13 @@
 version = '0.0.8'
-
+source = { :git => 'https://github.com/jonz-tech/JTReuse.git'} #:branch  => '#branchName'
+source[:tag] = "v#{version}"
 Pod::Spec.new do |s|
   s.name             = "JTReuse"
   s.version          = version
   s.summary          = "JTReuse projet"
   s.homepage         = "https://github.com/jonz-tech.git"
   s.license =  { :type => 'BSD' }
-  s.source   = { :git => 'https://github.com/jonz-tech/JTReuse.git',:tag => version.to_s  }
+  s.source   = source
   s.author           = { "jonz-tech" => "jonz-tech@gmail.com" }
   s.platform     = :ios, '8.0'
   s.requires_arc = true
