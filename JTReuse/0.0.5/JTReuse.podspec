@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
   s.default_subspec = 'JTReuse'
   s.subspec 'JTReuse' do |spec|
     spec.requires_arc            = true
-    spec.dependency = 'JTReuse/source'
-    spec.dependency = 'JTReuse/include'
-    spec.dependency = 'JTReuse/Resources'
+    spec.dependency 'JTReuse/source'
+    spec.dependency 'JTReuse/include'
+    spec.dependency 'JTReuse/Resources'
   end
   s.subspec 'source' do |spec|
     spec.requires_arc            = true
