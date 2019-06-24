@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.subspec 'JTReuse' do |spec|
     spec.requires_arc            = true
-    spec.source_files = 'JTReuse/JTReuseSource/**/*.{h,m,c,cpp,mm}'
+    spec.source_files = 'JTReuse/JTReuseSource/*.{h,m,c,cpp,mm}'
   end
   s.subspec 'include' do |spec|
     spec.requires_arc            = true
-    spec.source_files = 'JTReuse/OutHeader/**/*.{h}'
+    spec.source_files = 'JTReuse/OutHeader/*.{h}'
   end
   s.subspec 'Resources' do |spec|
     spec.resource_bundles = {
