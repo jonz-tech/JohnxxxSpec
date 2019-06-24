@@ -1,5 +1,5 @@
 version = '0.0.8'
-source = { :git => 'https://github.com/jonz-tech/JTReuse.git',:tag => s.version.to_s  }
+source = { :git => 'https://github.com/jonz-tech/JTReuse.git',:tag => version  }
 
 Pod::Spec.new do |s|
   s.name             = "JTReuse"
