@@ -1,4 +1,4 @@
-version = '0.0.2-dev.2'
+version = '0.0.2-dev.3'
 source = { :git => 'https://github.com/jonz-tech/JTLive.git'} #:branch  => '#branchName'
 source[:tag] = "v#{version}"
 Pod::Spec.new do |s|
@@ -16,17 +16,12 @@ Pod::Spec.new do |s|
   s.subspec 'JTLive' do |spec|
     spec.requires_arc            = true
     spec.ios.dependency 'JTLive/include'
-    spec.ios.dependency 'JTLive/resources'
     spec.framework = 'UIKit'
   end
 
   s.subspec 'include' do |spec|
     spec.requires_arc            = true
     spec.public_header_files = 'JTLive/out/*.{h}','JTLive/source/JTLiveViewController.h'
+    spec.source_files = 'JTLive/out/*.{h}','JTLive/source/JTLiveViewController.h' #,'JTReuse/include/*.{h}'
   end
-
-  s.subspec 'resources' do |spec|
-    spec.resources = 'JTLiveBundle.Bundle'
-  end
-
 end
