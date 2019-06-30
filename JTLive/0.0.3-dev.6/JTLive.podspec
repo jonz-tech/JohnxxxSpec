@@ -13,4 +13,6 @@ Pod::Spec.new do |s|
     s.source_files = 'JTLive/out/*.{h}','JTLive/source/JTLiveViewController.h'
     s.source_files = 'JTLive/out/*.{h}','JTLive/source/JTLiveViewController.h'
     s.resource_bundles = {'JTLiveBundle' => ['JTLive/resources/*']}
+    s.frameworks = 'UIKit'
 end
+ 
