@@ -1,4 +1,4 @@
-version = '0.0.3-dev.1'
+version = '0.0.3-dev.2'
 source = { :git => 'https://github.com/jonz-tech/JTLive.git'} #:branch  => '#branchName'
 source[:tag] = "v#{version}"
 Pod::Spec.new do |s|
@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
     s.platform     = :ios, '8.0'
     s.source       = source
     s.source_files = 'JTLive/out/*.{h}','JTLive/source/JTLiveViewController.h'
-    spec.source_files = 'JTLive/out/*.{h}','JTLive/source/JTLiveViewController.h'
+    s.source_files = 'JTLive/out/*.{h}','JTLive/source/JTLiveViewController.h'
     s.requires_arc = true
 end
