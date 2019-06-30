@@ -1,4 +1,4 @@
-version = '0.0.3-dev.4'
+version = '0.0.3-dev.5'
 source = { :git => 'https://github.com/jonz-tech/JTLive.git'} #:branch  => '#branchName'
 source[:tag] = "v#{version}"
 Pod::Spec.new do |s|
